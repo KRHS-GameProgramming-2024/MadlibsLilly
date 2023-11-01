@@ -25,14 +25,14 @@ def Story1(debug = False):
     birdname1 = getWord ("Enter a name: ", debug)
     
     out = ""
-    out += "once a cat named " + catName1
+    out += "    once a cat named " + catName1
     out += " went exploring the " + place1
     out += " when he saw a duck named " + duckName
-    out += ". " 
+    out += ". " + duckName
     out += " asked " + catName1
     out += " for help finding some fruit for a salad, he said yes and together to set off outside the " + place1
     out += " to find some " + fruitName1
-    out += " when they found the " + fruitName1 
+    out += ". when they found the " + fruitName1 
     out += ", they " + verb1
     out += " back to the " + place1 
     out += " where the duck lived and started making the fruit salad. They were almost done when they finished the cat realized that there was no " + fruitName2
