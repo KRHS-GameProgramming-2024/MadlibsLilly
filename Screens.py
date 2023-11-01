@@ -1,6 +1,6 @@
 def TitleScreen(debug = False):
     if debug: print("TitleScreen Function")
-    
+
     s =  "--------------------------------------------------------------------------------\n"
     s += "|                                                                              |\n"
     s += "|                                                                              |\n"
@@ -20,11 +20,11 @@ def TitleScreen(debug = False):
     s += "|                                                                              |\n"
     s += "|                                                                              |\n"
     s += "--------------------------------------------------------------------------------\n"
-    
+
     return s
 def MainMenu(debug = False):
     if debug: print("MainMenu Function")
-    
+
     s =  "--------------------------------------------------------------------------------\n"
     s += "|                                                                              |\n"
     s += "|                                                                              |\n"
@@ -34,8 +34,6 @@ def MainMenu(debug = False):
     s += "|                                                                              |\n"
     s += "|         2.) Story 2                                                          |\n"
     s += "|                                                                              |\n"
-    s += "|         3.) Story 3                                                          |\n"
-    s += "|                                                                              |\n"
     s += "|         Q.) Quit                                                             |\n"
     s += "|                                                                              |\n"
     s += "|                                                                              |\n"
@@ -44,5 +42,5 @@ def MainMenu(debug = False):
     s += "|                                                                              |\n"
     s += "|                                                                              |\n"
     s += "--------------------------------------------------------------------------------\n"
-    
+
     return s
