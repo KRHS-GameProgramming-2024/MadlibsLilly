@@ -2,14 +2,14 @@ from Getters import *
 
 def Story2(debug = False):
     if debug: print ("Story2 Function")
-    
+
     print ("     ")
     Name1 = getWord("Enter a name: ", debug)
-    
+
     Name2 = getWord("Enter a name: ", debug)
-    
+
     Verb1 = getWord("Enter a verb: ", debug)
-    
+
     out = ""
     out += "    " + Name1
     out += " didn't want to go to school the next day. So she told her father that she wouldn't go, he laughed and said she had to anyway." + Name1

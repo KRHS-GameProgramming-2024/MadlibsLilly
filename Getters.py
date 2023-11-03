@@ -1,8 +1,8 @@
 def getMenuOption(debug = False):
     if debug: print("getMenuOption Function")
-    
+
     goodInput = False
-    
+
     while not goodInput:
         option = input("please select an option ")
         option = option.lower ()
@@ -20,11 +20,12 @@ def getMenuOption(debug = False):
         option == "story1"):
             option = "1"
             goodInput = True
+        
         elif (option == "2" or 
         option == "two" or 
         option == "story 2" or 
         option == "story2"):
-            option = "1"
+            option = "2"
             goodInput = True    
         
         else:
@@ -35,9 +36,9 @@ def getMenuOption(debug = False):
 
 def getWord(promt, debug = False):
     if debug: print("getWord Function")
-    
+
     goodInput = False
-    
+
     while not goodInput:
         word = input(promt)
         goodInput = True
@@ -45,12 +46,12 @@ def getWord(promt, debug = False):
             goodInput = False
             print ("don't use language like that")
     return word
-    
+
 def getPlace(promt, debug = False):
     if debug: print("getPlace Function")
-    
+
     goodInput = False
-    
+
     while not goodInput:
         word = input(promt)
         goodInput = True
@@ -65,9 +66,9 @@ def getPlace(promt, debug = False):
 
 def getFruit (prompt, debug = False):
     if debug: print ("getFruit Function")
-    
+
     goodInput = False
-    
+
     while not goodInput:
         word = input(prompt)
         goodInput = True
@@ -78,7 +79,7 @@ def getFruit (prompt, debug = False):
             gooodInput = False
             print ("I don't know that one")
     return word
-    
+
 def isSwear(word, debug = False):
     if debug: print ("isSwear Function")
     if word.lower() in swearList:
