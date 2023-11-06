@@ -6,28 +6,28 @@ def getMenuOption(debug = False):
     while not goodInput:
         option = input("please select an option ")
         option = option.lower ()
-        
+
         if (option == "q" or 
         option == "quit" or 
         option == "x" or 
         option == "exit"):
             option = "q"
             goodInput = True
-            
+
         elif (option == "1" or 
         option == "one" or 
         option == "story 1" or 
         option == "story1"):
             option = "1"
             goodInput = True
-        
+
         elif (option == "2" or 
         option == "two" or 
         option == "story 2" or 
         option == "story2"):
             option = "2"
             goodInput = True    
-        
+
         else:
             print("please make a valid choice")
             
@@ -64,20 +64,55 @@ def getPlace(promt, debug = False):
             print ("please pick one of the options available")
     return word
 
-def getFruit (prompt, debug = False):
-    if debug: print ("getFruit Function")
+def getFruit (promt, debug = False):
+    if debug: print("getFruit Function")
 
     goodInput = False
 
     while not goodInput:
-        word = input(prompt)
+        word = input(promt)
         goodInput = True
         if isSwear(word, debug):
             goodInput = False
             print ("don't use language like that")
+
         elif word not in fruitList:
-            gooodInput = False
+            goodInput = False
+            print ("I don't know that one,")
+    return word
+
+def getChip (promt, debug = False):
+    if debug: print("getChip Function")
+
+    goodInput = False
+
+    while not goodInput:
+        word = input(promt)
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("don't use language like that")
+
+        elif word not in chipList:
+            goodInput = False
             print ("I don't know that one")
+    return word
+    
+def getTime (promt, debug = False):
+    if debug: print("getTime Function")
+
+    goodInput = False
+
+    while not goodInput:
+        word = input(promt)
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("don't use language like that")
+
+        elif word not in Time:
+            goodInput = False
+            print ("please pick sunrise, morning, midmorning, noon, afternoon, sunset, night or midnight")
     return word
 
 def isSwear(word, debug = False):
@@ -121,5 +156,24 @@ fruitList = ["apple",
  "lemons", 
  "durians", 
  "bananas",]
+chipList = ["tortilla", 
+    "chip",
+    "chips",
+    "doritos",
+    "lays",
+    "barbecue chips",
+    "bbq chips",
+    "sour cream and onion chips",
+    "sour cream & onion chips",
+    "salt and vineger chips",
+    "salt & vineger chips", 
+    "sun chips",]
 
-
+Time = [ "sunrise",
+    "morning",
+    "midmorning",
+    "noon", 
+    "afternoon", 
+    "sunset",
+    "night",
+    "midnight",]

@@ -14,7 +14,7 @@ def Madlibs(debug = False):
     while not done:
         print(MainMenu(debug))
         choice = getMenuOption(debug)
-        
+
         if choice == "q":
             exit();       
         elif choice == "1":

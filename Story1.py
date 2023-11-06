@@ -21,8 +21,14 @@ def Story1(debug = False):
     print ("    ")
     verb1 = getWord ("Enter a verb: ", debug)
 
+    print ("    ")
+    verb2 = getWord ("Enter another verb: ", debug)
+
     print ("   ")
     birdname1 = getWord ("Enter a name: ", debug)
+
+    print ("   ")
+    Time1 = getTime ("Enter a time of day: ", debug)
 
     out = ""
     out += "    once a cat named " + catName1
@@ -37,12 +43,13 @@ def Story1(debug = False):
     out += " back to the " + place1 
     out += " where the duck lived and started making the fruit salad. They were almost done when they finished the cat realized that there was no " + fruitName2
     out += "."
-    out += " He went out to get more and ran into a cardinal named " + birdname1
+    out += " He went out to get more and " + verb2
+    out += " into a cardinal named " + birdname1
     out += ". She had seen " + catName1
     out += " and " + duckName
     out += " making the salad and wanted some, she offered him a " + fruitName2
     out += " in exchange for some of it when the salad was made. The cat agreed and returned to the house with the cardinal. When the salad was done she took her fill and flew off."
-    out += " The duck and the cat stayed, eating and talking till dark."
+    out += " The duck and the cat stayed, eating and talking till " + Time1
 
 
     return out
