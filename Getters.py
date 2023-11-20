@@ -8,15 +8,15 @@ def getMenuOption(debug = False):
         option = input("please select an option ")
         option = option.lower ()
 
-        if (option == "q" or 
-        option == "quit" or 
-        option == "x" or 
+        if (option == "q" or
+        option == "quit" or
+        option == "x" or
         option == "exit"):
             option = "q"
             goodInput = True
 
-        elif (option == "1" or 
-        option == "one" or 
+        elif (option == "1" or
+        option == "one" or
         option == "story 1" or
         option == "story1"):
             option = "1"
@@ -33,7 +33,6 @@ def getMenuOption(debug = False):
             print("please make a valid choice")
 
         return option
-
 
 def getWord(promt, debug = False):
     if debug: print("getWord Function")
@@ -69,7 +68,7 @@ def getPlace(promt, debug = False):
 
 
     return word
-    
+
 def getPlaceMenu(promt, debug = False):
     if debug: print("getPlace Function")
 
@@ -94,7 +93,6 @@ def getPlaceMenu(promt, debug = False):
             except:
                 goodInput = False
                 print ("\nplease pick one of the options available")
-        
 
 
     return word
@@ -123,11 +121,9 @@ def getSaidMenu(promt, debug = False):
             except:
                 goodInput = False
                 print ("\nplease pick one of the options available")
-        
- 
 
     return word
-    
+
 def getFruit (promt, debug = False):
     if debug: print("getFruit Function")
 

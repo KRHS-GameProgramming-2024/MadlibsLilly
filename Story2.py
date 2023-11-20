@@ -3,21 +3,21 @@ from Getters import *
 def Story2(debug = False):
 
     if debug: print ("Story2 Function")
-    print "\n"
+    print ("\n")
     Name1 = getWord("Enter a name: ", debug)
-    print "\n"
+    print ("\n")
     Place1 = getWord ("Enter a place: ", debug)
-    print "\n"
+    print ("\n")
     Name2 = getWord("Enter a name: ", debug)
-    print "\n"
+    print ("\n")
     Verb1 = getWord("Enter a verb: ", debug)
-    print "\n"
+    print ("\n")
     Chip = getChip("Enter a kind of chip: ", debug)
-    print "\n"
+    print ("\n")
     Noun1 = getWord ("Enter a noun: ", debug)
-    print "\n"
+    print ("\n")
     Verb2 = getWord ("Enter a verb: ", debug)
-    print "\n"
+    print ("\n")
     saidSaid = getSaidMenu  ("Pick one from the list: ", debug)
 
     out = ""
@@ -42,7 +42,7 @@ def Story2(debug = False):
     out += ", 'go get some rest'"
     out += " " + Name1
     out += " beamed internally, 'so I don't have to go to " + Place1
-    out += "' ?"
+    out += " ?'"
     out += " Her mother laughed, 'sweetheart it's saturday!'"
 
     return out
