@@ -1,4 +1,4 @@
-import os
+import os *
 def getMenuOption(debug = False):
     if debug: print("getMenuOption Function")
 
@@ -48,6 +48,18 @@ def getWord(promt, debug = False):
         elif word == ("blue"):
             os.system("color 03")
             goodInput = False
+        elif word == ("green"):
+            os.system("color 02")
+            goodInput = False
+        elif word == ("red"):
+            os.system("color 04")
+            goodInput = False
+        elif word == ("purple"):
+            os.system("color 05")
+            goodInput = False
+        elif word == ("yellow"):
+            os.system("color 06")
+            goodInput = False
     return word
 
 def getPlace(promt, debug = False):
@@ -65,7 +77,6 @@ def getPlace(promt, debug = False):
         elif word not in Place:
             goodInput = False
             print ("please pick one of the options available")
-
 
     return word
 
